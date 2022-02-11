@@ -1,0 +1,22 @@
+<div>
+<h1>List of characters</h1>
+{{#each charactersFromDB}} <br>
+
+<h2>{{name}}</h2> <br>
+<button>
+    <a href="/characters/{{_id}}">View character information</a>
+</button>
+{{!-- <h3>{{rank}}</h3> <br> --}}
+{{!-- <h3>{{group}}</h3> <br>
+<h4>{{arsenal.type}}</h4> <br>
+<h4>{{arsenal.type}}</h4> <br>
+<h4>{{arsenal.type}}</h4>  --}}
+
+{{/each}}
+</div>
+<br>
+<div>
+    <button>
+        <a href="/characters/new">Adding new character</a>
+    </button>
+</div>
